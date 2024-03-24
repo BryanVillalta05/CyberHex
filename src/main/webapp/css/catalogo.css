@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, rgba(80, 2, 34, 0.281), rgba(0, 0, 0, 0.288)), url(/img/3395620.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #d8d8d8;
+    z-index: 9999;
+}
+
+header {
+    background-color: rgba(46, 46, 46, 0.322);
+    color: #d8d8d8;
+    text-align: left;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.container {
+    margin: 35px;
+}
+
+.item {
+    position:static;
+    display: inline-block;
+    margin-right: 20px;
+    margin: 45px;
+    z-index: 1;
+}
+
+.item-image {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid #d8d8d852;
+    box-shadow: 0 0 20px rgba(255, 0, 191, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.item:hover .item-image {
+    transform: scale(1.05);
+}
+
+.details-link {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: rgba(189, 30, 91, 0.753);
+    box-shadow: 0 0 20px rgba(255, 0, 191, 0.1);
+    color: #d8d8d8;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.details-link:hover {
+    background-color: rgba(189, 30, 91, 0.925);
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: rgba(189, 30, 91, 0.925);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgba(189, 30, 91, 0.925);
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.modal:target {
+    display: flex;
+}
+
+.modal:target + .item {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+footer {
+    background-color: rgba(46, 46, 46, 0.062);
+    color: #d8d8d8;
+    text-align: center;
+    padding: 20px 0;
+}

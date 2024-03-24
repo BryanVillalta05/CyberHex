@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, rgba(80, 2, 34, 0.281), rgba(0, 0, 0, 0.288)), url('/img/3395620.jpg');
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(46, 46, 46, 0.322);
+    color: #d8d8d8;
+    text-align: left;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px);
+}
+
+.rental-block {
+    background-color: rgba(46, 46, 46, 0.199);
+    color: #d8d8d8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 0, 191, 0.1);
+    width: 300px;
+}
+
+.rental-block h2 {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group select, .form-group input {
+    width: 100%;
+    padding: 8px;
+    background-color: #d8d8d809;
+    border: 1px solid #d8d8d809;
+    color: #d8d8d8;
+    border-radius: 4px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ff0707;
+    border-radius: 4px;
+    width: 100%;
+    background-color: rgba(189, 30, 91, 0.753);
+}
+
+option:checked {
+    background-color: rgba(189, 30, 91, 0.753);
+    color: #d8d8d8;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(189, 30, 91, 0.753);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(189, 30, 91, 0.925);
+}
+
+footer {
+    background-color: rgba(46, 46, 46, 0.062);
+    color: #d8d8d8;
+    text-align: center;
+    padding: 20px 0;
+}

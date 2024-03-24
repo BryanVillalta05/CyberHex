@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, rgba(80, 2, 34, 0.281), rgba(0, 0, 0, 0.288)), url(/img/3395620.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #d8d8d8;
+}
+
+header {
+    background-color: rgba(46, 46, 46, 0.322);
+    color: #d8d8d8;
+    text-align: left;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom right, rgba(80, 2, 34, 0.281), rgba(0, 0, 0, 0.288));
+    box-shadow: 0 0 20px rgba(255, 0, 191, 0.1);
+    border-radius: 5px;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgba(255, 0, 191, 0.315);
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: rgba(30, 94, 189, 0.096);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: rgba(30, 94, 189, 0.534);
+}
+
+button {
+    background-color: rgba(189, 30, 91, 0.753);
+    box-shadow: 0 0 20px rgba(255, 0, 191, 0.1);
+    color: #d8d8d8;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(189, 30, 91, 0.925);
+}
+
+footer {
+    background-color: rgba(46, 46, 46, 0.062);
+    color: #d8d8d8;
+    text-align: center;
+    padding: 20px 0;
+}
